@@ -1,0 +1,14 @@
+.action {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7px;
+  
+  input {
+    width: 48%;
+  }
+
+  button {
+    font-size: 13px;
+    width: 48%;
+  }
+}

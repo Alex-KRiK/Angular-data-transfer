@@ -1,0 +1,35 @@
+<div class="parent-container">
+  <div class="parent-container__header">
+    <h1>Parent container</h1>
+    <div class="parent-container__header-data">
+      <!-- Step 2 ngIf -->
+      <div *ngIf="true" class="parent-container__header-data--left">
+        <div class="label">Transferred Data to Parent component</div>
+        <div class="no-data" [ngClass]="{ 'data': transferredData }">
+          {{ transferredData ? transferredData : 'no data' }}
+        </div>
+      </div>
+      <!-- Step 1 ngIf -->
+      <div *ngIf="false" class="parent-container__header-data--right">
+        <div class="label">Send Data to Children component</div>
+        <div class="action">
+          <input #inputData type="text" pInputText />
+          <button
+            (click)="sendData(inputData.value)"
+            pButton
+            label="Send data to children"
+          ></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="parent-container__body">
+    <div class="parent-container__body--left">
+      <app-left></app-left>
+    </div>
+    <div class="parent-container__body--right">
+      <app-right></app-right>
+    </div>
+  </div>
+</div>

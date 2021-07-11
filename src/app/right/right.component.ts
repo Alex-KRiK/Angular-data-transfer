@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-right',
@@ -10,6 +10,10 @@ export class RightComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  sendData(data: string): void {
+    
   }
 
 }

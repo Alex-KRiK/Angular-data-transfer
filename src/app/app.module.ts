@@ -3,22 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { ParentComponent } from './header/parent.component';
 import { LeftComponent } from './left/left.component';
 import { RightComponent } from './right/right.component';
-import {InputTextModule} from 'primeng/inputtext';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [			
     AppComponent,
-      HeaderComponent,
-      LeftComponent,
-      RightComponent
+    ParentComponent,
+    LeftComponent,
+    RightComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    InputTextModule
+    InputTextModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

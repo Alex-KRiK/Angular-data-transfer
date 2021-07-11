@@ -5,6 +5,7 @@
   justify-content: center;
   margin-top: 7px;
   color: black;
+  height: 40px;
   font-style: italic;
   border: 1px solid black;
 }
@@ -19,3 +20,11 @@
   border: 2px solid deepskyblue;
   margin-top: 7px;
 }
+
+.label {
+  text-align: center;
+}
+// .p-button {
+//   background: deepskyblue !important;
+//   border: 1px solid deepskyblue !important;
+// }

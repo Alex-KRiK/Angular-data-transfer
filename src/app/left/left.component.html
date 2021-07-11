@@ -1,3 +1,10 @@
 <div class="left-container">
   <h2>Left children container</h2>
+
+  <div *ngIf="true" class="">
+    <div class="label">Transferred Data from Parent component</div>
+    <div class="no-data" [ngClass]="{ 'data': companyName }">
+      {{ companyName ? companyName : 'no data' }}
+    </div>
+  </div>
 </div>
