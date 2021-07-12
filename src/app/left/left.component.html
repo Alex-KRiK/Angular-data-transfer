@@ -1,10 +1,23 @@
 <div class="left-container">
   <h2>Left children container</h2>
-
-  <div *ngIf="true" class="">
-    <div class="label">Transferred Data from Parent component</div>
+  <!-- Step 1 ngIf -->
+  <div *ngIf="false" class="">
+    <div class="label">Transferred Data from the Parent component</div>
     <div class="no-data" [ngClass]="{ 'data': companyName }">
       {{ companyName ? companyName : 'no data' }}
+    </div>
+  </div>
+
+  <!-- Step 3 ngIf -->
+  <div *ngIf="false" class="">
+    <div class="label">Send Data to the Right component</div>
+    <div class="action">
+      <input #inputData type="text" pInputText />
+      <button
+        (click)="sendData(inputData.value)"
+        pButton
+        label="Send data to children"
+      ></button>
     </div>
   </div>
 </div>

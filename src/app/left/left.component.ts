@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-left',
@@ -9,9 +10,15 @@ export class LeftComponent implements OnInit {
 
   @Input() companyName: string;
 
-  constructor() { }
+  constructor(
+    private readonly appService: AppService
+  ) { }
 
   ngOnInit() {
+  }
+
+  sendData(data: string): void {
+    this.appService.currentDay$.next(data);
   }
 
 }
