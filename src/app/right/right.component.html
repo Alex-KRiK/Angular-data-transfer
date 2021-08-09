@@ -1,7 +1,7 @@
 <div class="right-container">
   <h2>Right children container</h2>
   <!-- Step 2 ngIf -->
-  <div *ngIf="false" class="">
+  <div *ngIf="false" class="container-body">
     <div class="label">Send Data to the Parent component</div>
     <div class="action">
       <input #inputData type="text" pInputText />
@@ -14,7 +14,7 @@
   </div>
 
   <!-- Step 3 ngIf service get/ BS / AS-->
-  <div *ngIf="false" class="">
+  <div *ngIf="false" class="container-body">
     <div class="label">Transferred Data from the Left component</div>
     <div class="no-data" [ngClass]="{ 'data': companyName }">
       {{ companyName ? companyName : 'no data' }}

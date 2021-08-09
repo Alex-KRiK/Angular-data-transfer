@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ParentComponent } from './header/parent.component';
+import { ParentComponent } from './parent/parent.component';
 import { LeftComponent } from './left/left.component';
 import { RightComponent } from './right/right.component';
 import { InputTextModule } from 'primeng/inputtext';

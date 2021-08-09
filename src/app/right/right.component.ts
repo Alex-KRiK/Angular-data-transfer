@@ -11,6 +11,7 @@ import { ReplaySubject } from 'rxjs';
 export class RightComponent implements OnInit {
 
   companyName: string;
+  hideActions: boolean;
 
   private componentDestroy$: ReplaySubject<void> = new ReplaySubject();
 

@@ -7,7 +7,7 @@ import { BehaviorSubject } from 'rxjs';
 export class AppService {
 
   // Step 4
-  currentDay$: BehaviorSubject<string> = new BehaviorSubject(null);
+  private currentDay$: BehaviorSubject<string> = new BehaviorSubject(null);
 
   // Step 3 
   private name: string;

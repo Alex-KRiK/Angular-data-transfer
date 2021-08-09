@@ -37,12 +37,12 @@
       }
 
       input {
-        width: 48%;
+        width:50%;
       }
 
       button {
-        font-size: 13px;
-        width: 48%;
+        font-size: 17px;
+        width: 60%;
       }
     }
   }
@@ -68,12 +68,5 @@
       border-left: 5px solid darkgray;
     }
     
-  }
-}
-
-:host::ng-deep {
-  .p-button {
-    background: deepskyblue !important;
-    border: 1px solid deepskyblue !important;
   }
 }

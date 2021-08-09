@@ -9,6 +9,7 @@ import { AppService } from '../app.service';
 export class LeftComponent implements OnInit {
 
   @Input() companyName: string;
+  hideActions: boolean;
 
   constructor(
     private readonly appService: AppService
@@ -18,7 +19,8 @@ export class LeftComponent implements OnInit {
   }
 
   sendData(data: string): void {
-    this.appService.currentDay$.next(data);
+    this.appService.setCompanyName(data);
+    // this.appService.currentDay$.next(data);
   }
 
 }

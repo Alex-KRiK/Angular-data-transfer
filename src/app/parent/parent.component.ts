@@ -17,7 +17,11 @@ export class ParentComponent implements OnInit {
   }
 
   sendData(data: string): void {
-    this.name = data;
+    // this.name = data;
+  }
+
+  getData(name: string) {
+    // this.transferredData = name;
   }
 
   setChildrenData(childrenData: string): void {
