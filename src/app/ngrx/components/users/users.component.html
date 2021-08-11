@@ -1,0 +1,26 @@
+<h2>
+  Users from Redux stream!
+</h2>
+
+<div class="action-top">
+  <button pButton label="Get users"  (click)="getUsers()"></button>
+</div>
+
+<div *ngIf="!(users$ | async)?.length" class="no-content">
+  No Users
+</div>
+
+<div *ngIf="(users$ | async)?.length" class="user-box">
+  <div class="user-box__user" *ngFor="let user of (users$ | async)">
+    <span>Name: {{ user.name }}</span>
+    <span>Id: {{ user.id }}</span>
+    <span>Email: {{ user.email }}</span>
+    <span>Gender: {{ user.gender }}</span>
+    <span>Status: {{ user.status }}</span>
+  </div>
+</div>
+
+<div class="action-bottom">
+  <button pButton label="Clear users"  (click)="clearUsers()"></button>
+</div>
+<button pButton label="Back" (click)="goToParentState()"></button>

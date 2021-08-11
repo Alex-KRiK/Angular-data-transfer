@@ -1,35 +1,5 @@
 node_modules
 
-dist/angular-data-transfer/3rdpartylicenses.txt
-
-dist/angular-data-transfer/styles.3a6f59248bbaa8a2bdaf.css
-
-dist/angular-data-transfer/runtime-es5.66c79b9d36e7169e27b0.js
-
-dist/angular-data-transfer/primeicons.c55d94a248721abbd220.svg
-
-dist/angular-data-transfer/primeicons.dfbfef2de4bfb34e9722.eot
-
-dist/angular-data-transfer/polyfills-es5.6e1055b712d0b250b19e.js
-
-dist/angular-data-transfer/primeicons.3a0d4a58da62cf7c55bb.ttf
-
-dist/angular-data-transfer/color.6441e63a57ccc5105bad.png
-
-dist/angular-data-transfer/favicon.ico
-
-dist/angular-data-transfer/hue.f8505bd4d6f3e3aa435b.png
-
-dist/angular-data-transfer/index.html
-
-dist/angular-data-transfer/main-es2015.07cc067085cae5ed804d.js
-
-dist/angular-data-transfer/main-es5.07cc067085cae5ed804d.js
-
-dist/angular-data-transfer/polyfills-es2015.6022d6f28e0500e60d30.js
-
-dist/angular-data-transfer/primeicons.e61f3495a7ecd3d571a4.woff
-
-dist/angular-data-transfer/runtime-es2015.66c79b9d36e7169e27b0.js
+dist
 
 package-lock.json

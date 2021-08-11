@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-parent',
@@ -11,7 +12,7 @@ export class ParentComponent implements OnInit {
 
   name: string;
 
-  constructor() { }
+  constructor(private readonly router: Router) { }
 
   ngOnInit() {
   }
@@ -26,5 +27,9 @@ export class ParentComponent implements OnInit {
 
   setChildrenData(childrenData: string): void {
     // this.transferredData = childrenData;
+  }
+
+  goToUsersState(): void {
+    this.router.navigateByUrl('users');
   }
 }
